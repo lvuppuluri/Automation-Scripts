@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [BrowersTestMain]" parallel="methods">
+  <parameter name="browserName" value="firefox"/>
+  <parameter name="version" value="38.0.5"/>
+  <parameter name="platform" value="windows"/>
+  <parameter name="url" value="https://internal-future-dot-leap-app-future.appspot.com/"/>
+  <test name="Wfx(failed)" parallel="methods">
+    <parameter name="browserName" value="firefox"/>
+    <parameter name="version" value="39.0"/>
+    <parameter name="platform" value="windows"/>
+    <parameter name="url" value="https://internal-future-dot-leap-app-future.appspot.com/"/>
+    <classes>
+      <class name="leaplogin.BrowsersTestMain">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="testLeaplogin"/>
+        </methods>
+      </class> <!-- leaplogin.BrowsersTestMain -->
+    </classes>
+  </test> <!-- Wfx(failed) -->
+</suite> <!-- Failed suite [BrowersTestMain] -->

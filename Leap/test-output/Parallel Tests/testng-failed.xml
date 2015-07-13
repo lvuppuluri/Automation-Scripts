@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" name="Failed suite [Parallel Tests]" parallel="tests">
+  <parameter name="browser" value="Internet Explorer"/>
+  <parameter name="version" value="9"/>
+  <parameter name="platform" value="Windows"/>
+  <parameter name="url" value="https://internal-future-dot-leap-app-future.appspot.com/"/>
+  <test name="Windows+firefox(failed)" parallel="tests">
+    <parameter name="browser" value="Firefox"/>
+    <parameter name="version" value="38.0.5"/>
+    <parameter name="platform" value="win7"/>
+    <parameter name="url" value="https://internal-future-dot-leap-app-future.appspot.com/"/>
+    <classes>
+      <class name="leaplogin.Browserstest">
+        <methods>
+          <include name="testLeaplogin"/>
+        </methods>
+      </class> <!-- leaplogin.Browserstest -->
+    </classes>
+  </test> <!-- Windows+firefox(failed) -->
+  <test name="Windows+IE9(failed)" parallel="tests">
+    <parameter name="browser" value="Internet Explorer"/>
+    <parameter name="version" value="9"/>
+    <parameter name="platform" value="Windows"/>
+    <parameter name="url" value="https://internal-future-dot-leap-app-future.appspot.com/"/>
+    <classes>
+      <class name="leaplogin.Browserstest">
+        <methods>
+          <include name="testLeaplogin"/>
+        </methods>
+      </class> <!-- leaplogin.Browserstest -->
+    </classes>
+  </test> <!-- Windows+IE9(failed) -->
+</suite> <!-- Failed suite [Parallel Tests] -->

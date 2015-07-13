@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" name="Failed suite [Browserstest]" parallel="tests">
+  <parameter name="browserName" value="chrome"/>
+  <parameter name="version" value="43"/>
+  <parameter name="platform" value="windows"/>
+  <parameter name="url" value="https://internal-future-dot-leap-app-future.appspot.com/"/>
+  <test name="Wff(failed)" parallel="tests">
+    <parameter name="browserName" value="firefox"/>
+    <parameter name="version" value="39.0"/>
+    <parameter name="platform" value="windows"/>
+    <parameter name="url" value="https://internal-future-dot-leap-app-future.appspot.com/"/>
+    <classes>
+      <class name="leaplogin.Browserstest">
+        <methods>
+          <include name="testLeaplogin"/>
+          <include name="beforeMethod"/>
+          <include name="beforeMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- leaplogin.Browserstest -->
+    </classes>
+  </test> <!-- Wff(failed) -->
+  <test name="VMff(failed)" parallel="tests">
+    <parameter name="browserName" value="firefox"/>
+    <parameter name="version" value="38"/>
+    <parameter name="platform" value="windows"/>
+    <parameter name="url" value="https://internal-future-dot-leap-app-future.appspot.com/"/>
+    <classes>
+      <class name="leaplogin.Browserstest">
+        <methods>
+          <include name="testLeaplogin"/>
+          <include name="beforeMethod"/>
+          <include name="beforeMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- leaplogin.Browserstest -->
+    </classes>
+  </test> <!-- VMff(failed) -->
+  <test name="Wcr(failed)" parallel="tests">
+    <parameter name="browserName" value="chrome"/>
+    <parameter name="version" value="43"/>
+    <parameter name="platform" value="windows"/>
+    <parameter name="url" value="https://internal-future-dot-leap-app-future.appspot.com/"/>
+    <classes>
+      <class name="leaplogin.Browserstest">
+        <methods>
+          <include name="testLeaplogin"/>
+          <include name="beforeMethod"/>
+          <include name="beforeMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- leaplogin.Browserstest -->
+    </classes>
+  </test> <!-- Wcr(failed) -->
+</suite> <!-- Failed suite [Browserstest] -->
