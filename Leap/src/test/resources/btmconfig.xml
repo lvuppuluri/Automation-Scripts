@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="BrowersTestMain" verbose="1" thread-count="2"
+	parallel="methods">
+	<test name="Wfx">
+		<parameter name="browserName" value="firefox"></parameter>
+		<parameter name="version" value="39.0"></parameter>
+		<parameter name="platform" value="windows"></parameter>
+		<parameter name="url"
+			value="https://internal-future-dot-leap-app-future.appspot.com/" />
+		<classes>
+			<class name="leaplogin.BrowsersTestMain" />
+		</classes>
+	</test>
+<!-- 	<test name="Wcr">
+		<parameter name="browserName" value="chrome"></parameter>
+		<parameter name="version" value="43"></parameter>
+		<parameter name="platform" value="windows"></parameter>
+		<parameter name="url"
+			value="https://internal-future-dot-leap-app-future.appspot.com/" />
+		<classes>
+			<class name="leaplogin.BrowsersTestMain" />
+		</classes>
+	</test>
+	<test name="Msf">
+		<parameter name="browserName" value="safari"></parameter>
+		<parameter name="version" value="5"></parameter>
+		<parameter name="platform" value="mac"></parameter>
+		<parameter name="url"
+			value="https://internal-future-dot-leap-app-future.appspot.com/" />
+		<classes>
+			<class name="leaplogin.BrowsersTestMain" />
+		</classes>
+	</test>
+	<test name="Wie">
+		<parameter name="browserName" value="internet explorer"></parameter>
+		<parameter name="version" value="11"></parameter>
+		<parameter name="platform" value="windows"></parameter>
+		<parameter name="url"
+			value="https://internal-future-dot-leap-app-future.appspot.com/" />
+		<classes>
+			<class name="leaplogin.BrowsersTestMain" />
+		</classes>
+	</test>
+	<test name="Vmie">
+		<parameter name="browserName" value="internet explorer"></parameter>
+		<parameter name="version" value="9"></parameter>
+		<parameter name="platform" value="windows"></parameter>
+		<parameter name="url"
+			value="https://internal-future-dot-leap-app-future.appspot.com/" />
+		<classes>
+			<class name="leaplogin.BrowsersTestMain" />
+		</classes>
+	</test> -->
+	<test name="Vmfx">
+		<parameter name="browserName" value="firefox"></parameter>
+		<parameter name="version" value="38.0.5"></parameter>
+		<parameter name="platform" value="windows"></parameter>
+		<parameter name="url"
+			value="https://internal-future-dot-leap-app-future.appspot.com/" />
+		<classes>
+			<class name="leaplogin.BrowsersTestMain" />
+		</classes>
+	</test>	
+</suite>
